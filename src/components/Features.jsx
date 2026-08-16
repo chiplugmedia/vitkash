@@ -33,7 +33,10 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section className="relative overflow-hidden bg-black text-white py-24 md:py-32">
+    <section
+      id="earn"
+      className="relative overflow-hidden bg-black text-white py-24 md:py-32"
+    >
       {/* Animated Galaxy Background */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid */}

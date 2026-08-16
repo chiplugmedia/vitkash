@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import heroVisual from "@/assets/img/hero-visual.jpeg";
+import { Users, Megaphone, Wallet, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -85,22 +86,13 @@ export default function Hero() {
         </div>
 
         {/* Premium Stats Card */}
-        <div
-          className="
-            mt-10
-            w-full
-            max-w-md
-            rounded-3xl
-            border
-            border-black/10
-            bg-white/70
-            backdrop-blur-xl
-            p-5
-            shadow-[0_20px_50px_rgba(0,0,0,0.06)]
-          "
-        >
-          <div className="grid grid-cols-3 gap-4">
-            <div>
+        <div className="mt-10 w-full max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-4 text-center">
+              <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center mb-3 mx-auto">
+                <Users size={22} />
+              </div>
+
               <div className="text-xl sm:text-2xl font-bold text-black">
                 50K+
               </div>
@@ -108,15 +100,35 @@ export default function Hero() {
               <div className="text-xs text-black/50 mt-1">Members</div>
             </div>
 
-            <div>
+            <div className="p-4 text-center">
+              <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center mb-3 mx-auto">
+                <Megaphone size={22} />
+              </div>
+
+              <div className="text-xl sm:text-2xl font-bold text-black">
+                20K+
+              </div>
+
+              <div className="text-xs text-black/50 mt-1">Advertisers</div>
+            </div>
+
+            <div className="p-4 text-center">
+              <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center mb-3 mx-auto">
+                <Wallet size={22} />
+              </div>
+
               <div className="text-xl sm:text-2xl font-bold text-black">
                 ₦100M+
               </div>
 
-              <div className="text-xs text-black/50 mt-1">Rewards</div>
+              <div className="text-xs text-black/50 mt-1">Payouts</div>
             </div>
 
-            <div>
+            <div className="p-4 text-center">
+              <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center mb-3 mx-auto">
+                <Zap size={22} />
+              </div>
+
               <div className="text-xl sm:text-2xl font-bold text-black">
                 24/7
               </div>
@@ -125,7 +137,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
         {/* ================= HERO IMAGE ================= */}
         <div className="relative mt-14 sm:mt-20 flex justify-center">
           {/* Glow */}
