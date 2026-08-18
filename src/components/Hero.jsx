@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import heroVisual from "@/assets/img/hero-visual.jpeg";
 import { Users, Megaphone, Wallet, Zap } from "lucide-react";
 
 export default function Hero() {
@@ -141,7 +140,7 @@ export default function Hero() {
         <div className="relative mt-14 sm:mt-20 flex justify-center">
           {/* Glow */}
           <div className="absolute inset-0 flex justify-center items-center">
-            <div className="w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] bg-black/5 rounded-full blur-[100px]" />
+            <div className="w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] bg-black/5 rounded-full" />
           </div>
 
           {/* Orbit Rings */}
@@ -168,12 +167,11 @@ export default function Hero() {
                 backdrop-blur-3xl
                 p-3
                 sm:p-4
-                shadow-[0_20px_80px_rgba(0,0,0,0.08)]
               "
             >
               <img
-                src={heroVisual}
-                alt="Hero"
+                src="/"
+                alt="vitkash"
                 className="
                   w-full
                   rounded-[24px]
@@ -185,7 +183,7 @@ export default function Hero() {
                 <div className="text-xs text-black/50">Featured Collection</div>
 
                 <div className="font-bold text-lg sm:text-xl text-black mt-1">
-                  NEXTEL Genesis
+                  Vitkash
                 </div>
               </div>
             </div>

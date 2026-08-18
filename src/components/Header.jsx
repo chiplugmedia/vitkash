@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import logo from "@/assets/logos/vitkashblacklogo.png";
 
 const NAV_LINKS = [
   { href: "/", label: "Home", isRoute: true },
@@ -33,7 +32,7 @@ export default function Header() {
             <div className="absolute left-5 sm:left-8 top-1/2 -translate-y-1/2">
               <a href="#top" className="flex items-center">
                 <img
-                  src={logo}
+                  src="/mysite/app/vitkashblacklogo.png"
                   alt="Vitkash Logo"
                   className="h-10 w-auto object-contain"
                 />
